@@ -1,0 +1,22 @@
+{
+  "name": "hubot-assign-pr",
+  "description": "A hubot script that assigns people to a PR",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "dependencies": {},
+  "peerDependencies": {
+    "hubot": "2.x"
+  },
+  "devDependencies": {
+    "hubot": "2.x",
+    "promise": "^7.0.4"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "true"
+  }
+}
