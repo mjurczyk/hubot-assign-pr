@@ -106,7 +106,7 @@ module.exports = function (robot) {
     var assignedPeople = assignmentList.splice(0, 2);
     var callThemNames = [].concat(assignedPeople);
 
-    assignmentList = assignedPeople.concat(assignedPeople);
+    assignmentList = assignmentList.concat(assignedPeople);
 
     callThemNames = naturalizeListing(
       callThemNames.map(function (displayName) {
