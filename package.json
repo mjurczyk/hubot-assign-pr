@@ -1,7 +1,7 @@
 {
   "name": "hubot-assign-pr",
   "description": "A hubot script that assigns people to a PR",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "keywords": [
     "hubot",
