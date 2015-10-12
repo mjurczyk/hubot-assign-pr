@@ -19,6 +19,14 @@ var fs = require('fs');
 var superagent = require('superagent');
 var Promise = require('promise');
 
+// Copied from:
+// @see http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
+// NOTE Modifies both input and output arrays
+function shuffle(o){
+  for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+  return o;
+}
+
 module.exports = function (robot) {
   var team;
   var assignmentList;
@@ -31,6 +39,7 @@ module.exports = function (robot) {
   }
 
   assignmentList = [].concat(Object.keys(team));
+  shuffle(assignmentList);
 
   function naturalizeListing(listing) {
     // Add some natural feeling to the listings by adding 'and' instead of last comma
